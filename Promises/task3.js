@@ -1,4 +1,4 @@
-async function fetchTodo() {
+async function asyncFetchTodo() {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
         if (!response.ok) {
@@ -11,9 +11,9 @@ async function fetchTodo() {
     }
 };
 
-async function fetchUser() {
+async function asyncFetchUser() {
     try {
-        const repornce = await fetch('https://jsonplaceholder.typicode.com/users/1');
+        const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
         if (!response.ok) {
             throw new Error('Помилка отримання User')
         }
@@ -24,23 +24,12 @@ async function fetchUser() {
     }
 };
 
-async function fetchUser() {
-    try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
-        if (!response.ok) {
-            throw new Error('Помилка отримання user');
-        }
-        return await response.json();
-    } catch (error) {
-        console.error('Помилка в fetchUser:', error);
-        throw error;
-    }
-}
+
 
 
 async function fetchAllData() {
     try {
-        const [todo, user] = await Promise.all([fetchTodo(), fetchUser()]);
+        const [todo, user] = await Promise.all([asyncFetchTodo(), asyncFetchUser()]);
         console.log('Результат Promise.all:');
         console.log('Todo:', todo);
         console.log('User:', user);
@@ -49,10 +38,10 @@ async function fetchAllData() {
     }
 }
 
-// Використання async/await для Promise.race
+
 async function fetchFirstData() {
     try {
-        const result = await Promise.race([fetchTodo(), fetchUser()]);
+        const result = await Promise.race([asyncFetchTodo(), asyncFetchUser()]);
         console.log('Результат Promise.race:', result);
     } catch (error) {
         console.error('Помилка у Promise.race:', error);
