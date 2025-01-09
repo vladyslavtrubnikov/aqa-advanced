@@ -1,6 +1,6 @@
 
 class TodoRequest{
-    async fetchTodo() {
+    async classFetchTodo() {
         try {
             const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
             if (!response.ok) {
@@ -16,7 +16,7 @@ class TodoRequest{
 
 
 class UserRequest {
-    async fetchUser() {
+    async classFetchUser() {
         try {
             const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
             if (!response.ok) {
@@ -38,8 +38,8 @@ async function mainRequest() {
     
     try {
         const [todo, user] = await Promise.all([
-            todoRequest.fetchTodo(),
-            userRequest.fetchUser()
+            todoRequest.classFetchTodo(),
+            userRequest.classFetchUser()
         ]);
         console.log('Результат Promise.all:');
         console.log('Todo:', todo);
@@ -51,8 +51,8 @@ async function mainRequest() {
     
     try {
         const result = await Promise.race([
-            todoRequest.fetchTodo(),
-            userRequest.fetchUser()
+            todoRequest.classFetchTodo(),
+            userRequest.classFetchUser()
         ]);
         console.log('Результат Promise.race:', result);
     } catch (error) {
