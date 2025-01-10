@@ -4,4 +4,5 @@ const secondArray = [45, 56, 23, 435, 687, 12];
 
 const unitedArray = firstArray.concat(secondArray);
 
-console.log(unitedArray)
+
+console.log(unitedArray);
