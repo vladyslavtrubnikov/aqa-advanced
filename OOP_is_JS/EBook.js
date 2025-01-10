@@ -1,3 +1,4 @@
+
 import { Book } from './Book.js';
 
 export class EBook extends Book {

@@ -1,4 +1,5 @@
 export class Book {
+
   constructor(name, author, year) {
     (this.name = name), (this.author = author), (this.year = year);
   }
@@ -51,6 +52,7 @@ const book1 = new Book('Володар Перстнів : Повернення �
 const book2 = new Book('Гаррі Поттер і філософський камінь', 'Джоан Роулінг', 1997);
 
 const book3 = new Book('Божественна комедія', 'Данте Алігєрі', 1321);
+
 
 book1.printInfo();
 book2.printInfo();

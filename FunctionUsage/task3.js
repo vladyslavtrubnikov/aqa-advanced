@@ -1,3 +1,4 @@
+
 function devide(numerator, denominator) {
   if (typeof numerator !== 'number' || typeof denominator !== 'number') {
     throw new Error('Обидва числа мають бути цифрою');
@@ -27,3 +28,4 @@ numberCases.forEach(({ numerator, denominator }) => {
     console.log('Робота завершена');
   }
 });
+

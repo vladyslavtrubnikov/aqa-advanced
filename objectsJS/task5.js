@@ -1,4 +1,5 @@
 const users = [
+
   {
     name: 'Franco',
     email: 'test@gmail.com',
@@ -19,3 +20,4 @@ const users = [
 for (const { name, email, age } of users) {
   console.log(`Name: ${name}, Email: ${email}, Age: ${age}`);
 }
+

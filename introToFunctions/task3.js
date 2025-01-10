@@ -1,3 +1,4 @@
+
 function checkOrder(available, ordered) {
   if (ordered === 0) {
     return 'Your order is empty';
@@ -13,3 +14,4 @@ console.log(checkOrder(22, 45));
 console.log(checkOrder(77, 0));
 
 console.log(checkOrder(10, 6));
+

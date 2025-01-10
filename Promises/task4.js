@@ -1,3 +1,4 @@
+
 class TodoRequest {
   async classFetchTodo() {
     try {
@@ -49,4 +50,3 @@ async function mainRequest() {
   }
 }
 
-mainRequest();

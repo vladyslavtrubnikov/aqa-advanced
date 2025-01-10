@@ -1,3 +1,4 @@
+
 const studentObj = {};
 
 studentObj.firstName = 'Jerry';
@@ -6,3 +7,4 @@ studentObj.age = 20;
 studentObj.courses = ['Mathematics', 'History', 'Programming'];
 
 console.log(studentObj);
+

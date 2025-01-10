@@ -1,4 +1,5 @@
 const car1 = {
+
   brand: 'Volvo',
   model: 'XC90',
   year: 2024,
@@ -13,3 +14,4 @@ const car2 = {
 const car3 = { ...car2, ...car1 };
 
 console.log(car3);
+

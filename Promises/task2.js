@@ -1,4 +1,5 @@
 function fetchTodo() {
+
   return fetch('https://jsonplaceholder.typicode.com/todos/1')
     .then((response) => {
       if (!response.ok) {
@@ -43,3 +44,4 @@ Promise.race([fetchTodo(), fetchUser()])
   .catch((error) => {
     console.error('Помилка у Promise.race:', error);
   });
+

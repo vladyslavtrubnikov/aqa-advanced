@@ -1,4 +1,5 @@
 function handleNum(number, handleEven, handleOdd) {
+
   if (number % 2 === 0) {
     handleEven();
   } else {

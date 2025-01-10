@@ -1,4 +1,5 @@
 async function asyncFetchTodo() {
+
   try {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
     if (!response.ok) {
@@ -46,3 +47,4 @@ async function fetchFirstData() {
 
 fetchAllData();
 fetchFirstData();
+
