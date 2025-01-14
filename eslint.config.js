@@ -3,7 +3,6 @@ import globals from 'globals';
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   {
-    languageOptions: { globals: globals.browser },
     rules: {
       'no-console': 'warn', // Попередження при використанні `console.log`, `console.error` та інших методів консолі
       'no-unused-vars': 'warn', // Попередження при наявності не використаних змінних
